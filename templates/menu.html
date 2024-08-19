@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Menu{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/menu.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="container">
+    <form action="{{ url_for('submit_form') }}" method="POST">
+        <div class="form-group">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+        </div>
+        <div class="form-group">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age">
+        </div>
+        <div class="form-group">
+            <label for="Race">Race:</label>
+            <select id="Race" name="Race">
+                <option value="White">White</option>
+                <option value="Black or African American">Black or African American</option>
+                <option value="Hispanic">Hispanic</option>
+                <option value="Asian">Asian</option>
+                <option value="Arab">Arab</option>
+                <option value="Native Hawaiian">Native Hawaiian</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" placeholder="Enter your Email">
+        </div>
+        <div class="form-group">
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address">
+        </div>
+        <div class="form-group">
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password" minlength="8" placeholder="Enter password" required>
+        </div>
+        <div class="button-group">
+            <a href="{{ url_for('index') }}"><button type="button">Back</button></a>
+            <button type="submit" value="submit">Submit</button>
+            <a href="{{ url_for('login') }}"><button type="button">Login</button></a>
+        </div>
+    </form>
+</section>
+{% endblock %}

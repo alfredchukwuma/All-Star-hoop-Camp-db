@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}All-Star Hoop Camp{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Welcome To</h1>
+    <h1>All-Star Hoop Camp</h1>
+</header>
+<div class="header">
+    <h1>What We Offer</h1>
+</div>
+<section class="design">
+    <div class="box">
+        <h2>Elite Skills Development</h2>
+        <ul>
+            <li><b>Comprehensive Training:</b> Tailored drills to enhance dribbling, shooting, passing, and defensive skills.</li>
+            <li><b>Professional Coaching:</b> Guidance from experienced coaches with a background in professional or collegiate basketball.</li>
+            <li><b>Performance Analytics:</b> Use of advanced metrics and video analysis to track progress and identify areas for improvement.</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>Team Building and Leadership</h2>
+        <ul>
+            <li><b>Collaborative Exercises:</b> Activities designed to promote teamwork and cooperation among players.</li>
+            <li><b>Leadership Workshops:</b> Sessions focused on developing leadership qualities both on and off the court.</li>
+            <li><b>Communication Skills:</b> Training to improve on-court communication and team dynamics.</li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2>Fitness and Conditioning</h2>
+        <ul>
+            <li><b>Strength Training:</b> Customized programs to build core strength and enhance physical fitness.</li>
+            <li><b>Endurance Drills:</b> Exercises aimed at improving stamina and cardiovascular health.</li>
+            <li><b>Nutrition Guidance:</b> Education on proper nutrition and diet to support athletic performance and recovery.</li>
+        </ul>
+    </div>
+</section>
+<div class="button-container">
+    <a href="{{ url_for('menu') }}" class="btn">Join Now</a>
+</div>
+<footer>
+    Made By: Ohitsalfyy
+</footer>
+{% endblock %}

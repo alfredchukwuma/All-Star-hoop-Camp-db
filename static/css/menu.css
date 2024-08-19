@@ -1,0 +1,105 @@
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at center, #ff8c00, #000000);
+    background-size: cover; /* Ensure the background covers the entire viewport */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-attachment: fixed; /* Make background fixed */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    position: relative;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form .form-group input,
+form .form-group select {
+    width: calc(100% - 22px); /* Adjust width to fit within the container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-group button,
+.button-group a button {
+    background-color: #ff8c00; /* Match with the orange background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100px;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover,
+.button-group a button:hover {
+    background-color: #cc7000; /* Darker shade of orange for hover effect */
+}
+
+.button-group a {
+    text-decoration: none;
+}
+
+.flash-messages {
+    position: absolute;
+    top: 10px; /* Position the flash messages at the top */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.flash {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto; /* Center the messages */
+}
+
+.flash.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.flash.danger {
+    background-color: #f44336;
+    color: white;
+}

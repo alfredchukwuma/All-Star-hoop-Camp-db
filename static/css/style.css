@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body{
+    background-color:  #f8f8f8;
+  }
+  header {
+    background-image: url('../images/background.jpg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    width: 100%; 
+  }
+  header h1{
+    text-align: center;
+    font-size: 120px;
+    font-weight: 900;
+    position: relative;
+    top: 200px;
+    color: #F5F5F5;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+ .header{
+  text-align: center;
+  padding: 20px;
+  background-color:#cc7000 ;
+  color: white;
+ }
+ section.design{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+ }
+ .box{
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  min-width: 250px;
+ }
+.box h2 {
+  text-align: center;
+}
+.box ul{
+  list-style-type: none;
+  padding: 0;
+}
+.box ul li{
+  margin-bottom: 10px;
+}
+.button-container  {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+
+}
+.button-container button{
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.button-container button:hover {
+  background-color: #cc7000;
+}
+footer{
+  text-align: center;
+  padding: 10px;
+  background-color: #cc7000;
+  color: white;
+  
+  width: 100%;
+  bottom: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  background-color: #ff8c00;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: #cc7000;
+}
+
